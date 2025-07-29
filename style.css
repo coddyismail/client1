@@ -18,6 +18,7 @@
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: var(--light);
+ 
   color: var(--text);
   line-height: 1.7;
   overflow-x: hidden;
@@ -30,14 +31,56 @@ h1, h2, h3, h4 {
 }
 
 .container {
+   filter: blur(100px);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
+ .payment {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    z-index: 9999;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
 
+  .payment h2 {
+    color: #e53935;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .payment p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .payment a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+
+  .payment a:hover {
+    background-color: #0f5bc1;
+  }
 /* Header */
 header {
+   filter: blur(100px);
   height: 100vh;
   min-height: 700px;
   background: linear-gradient(rgba(42, 30, 18, 0.7), rgba(42, 30, 18, 0.7)),

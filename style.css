@@ -80,7 +80,7 @@ h1, h2, h3, h4 {
   }
 /* Header */
 header {
-   filter: blur(100px);
+   
   height: 100vh;
   min-height: 700px;
   background: linear-gradient(rgba(42, 30, 18, 0.7), rgba(42, 30, 18, 0.7)),
